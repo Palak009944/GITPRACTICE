@@ -1,8 +1,8 @@
 class Dog:
-    species="canine"
+    species="canine" # Class attribute
     def __init__(self, name, age):
-        self.name = name
-        self.age = age
+        self.name = name #Instance attribute 
+        self.age = age #Instance attribute
 
 dog1=Dog("Tommy",3)
 dog2=Dog("Jack",4)
