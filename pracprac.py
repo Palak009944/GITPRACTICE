@@ -48,6 +48,21 @@ def show_speed(vehicle):
 show_speed(Car())
 show_speed(Truck())
 
+#Example of Encapsulation 
+#Encapsulation is the process of binding data (variables) and methods (functions) into a single unit (class) and controlling access to the data.
+
+class BankAccount:
+    def __init__(self):
+        self.__balance=1000  #any variable starting with two underscores is a hidden variable or can't be accessed directly
+    def show_balance(self):
+        print(self.__balance) #the variable __balance can only be accessed through functions/methods
+    
+acc=BankAccount()
+acc.show_balance()
+#acc.__balance will show error
+
+
+
 
 
         
