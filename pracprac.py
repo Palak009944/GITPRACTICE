@@ -26,6 +26,29 @@ class cat(Animal):
 class cow(Animal):
     pass 
 c1=cat()
-c1.eat()
+c1.eat()  #no print statement because the function called already has one
 m1=cow()
 m1.sleep()
+
+#Example of Polymorphism 
+#One method/function name, many behaviours
+
+class Car:
+    def speed_range(self):
+        print("WARNING- overspeeding can be fatal")
+        print("Maintain 40-60 Km/hr ")
+class Truck:
+    def speed_range(self):
+        print("WARNING- overspeeding can be fatal")
+        print("Maintain 60-80 Km/hr")
+
+def show_speed(vehicle):
+    vehicle.speed_range()
+
+show_speed(Car())
+show_speed(Truck())
+
+
+
+        
+
