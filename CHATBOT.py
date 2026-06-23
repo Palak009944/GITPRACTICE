@@ -1,5 +1,5 @@
 #This chatbot will do the most basic conversation with you
-class CHATBOT:
+class CHATBOT: #defining a blueprint for chatbot
     def respond(self,message): 
         if message.lower()=="hi":
             return 'Hello'
@@ -14,6 +14,7 @@ class CHATBOT:
         else:
             return "Didn't get you"
         
+
 bot1=CHATBOT()
 print("WELCOMING YOU TO A SIMPLE CHATBOT")
 print("Type 'Bye' to end the conversation")
