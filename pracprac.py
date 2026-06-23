@@ -61,7 +61,17 @@ acc=BankAccount()
 acc.show_balance()
 #acc.__balance will show error
 
+#Example of Data Abstraction
+#Abstraction means hiding unnecessary details and showing only what the user needs.
 
+class Jet:
+    def start(self):
+        print("Jet Started")
+
+J1=Jet()
+J1.start()
+
+#The user will be displayed that JEt started and will not be shown how, this is abstraction
 
 
 
