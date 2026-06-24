@@ -21,7 +21,7 @@ print("Type 'Bye' to end the conversation")
 while True:
     message=input("You:")
     response=bot1.respond(message)
-    print("Bot:",response)
+    print("TheBot:",response)
     if message.lower()=='bye': #to end the conversation 
         break
 
