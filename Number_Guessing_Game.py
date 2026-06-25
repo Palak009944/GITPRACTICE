@@ -22,5 +22,5 @@ while (N<=10):
         break
     N=N+1
 if not won:
-    print("Better luck next time")
+    print("Better luck next time")     
     print("Correct number was", secret_number)
