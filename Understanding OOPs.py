@@ -19,3 +19,34 @@ c1.introduce()
 c2.introduce()
 c1.start_engine()
 c2.start_engine()
+
+class Person:
+    def __init__(self,name,age):
+        self.name=name
+        self.age=age
+    def introduce(self):
+        print("My name is",self.name)
+        print("I am",self.age,"years old")
+
+class Student(Person):
+    def __init__(self,name,age,course):
+        super().__init__(name,age)
+        self.course=course
+
+    def study(self):
+        print(self.name,"is studying",self.course)
+
+class Teacher(Person):
+    def __init__(self,name,age,subject):
+        super().__init__(name,age)
+        self.subject=subject
+
+    def teach(self):
+        print("Ms.Sharma is teaching",self.subject)
+
+s1=Student("Palak",19,"CSE")
+t1=Teacher("Ms.Sharma",40,"DSA")
+s1.introduce()
+s1.study()
+t1.introduce()
+t1.teach()
