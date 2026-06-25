@@ -20,7 +20,7 @@ c2.introduce()
 c1.start_engine()
 c2.start_engine()
 
-class Person:
+class Person:                               #Parent class
     def __init__(self,name,age):
         self.name=name
         self.age=age
@@ -28,7 +28,7 @@ class Person:
         print("My name is",self.name)
         print("I am",self.age,"years old")
 
-class Student(Person):
+class Student(Person):                     #Child class 1
     def __init__(self,name,age,course):
         super().__init__(name,age)
         self.course=course
@@ -36,7 +36,7 @@ class Student(Person):
     def study(self):
         print(self.name,"is studying",self.course)
 
-class Teacher(Person):
+class Teacher(Person):                     #Child class 2 
     def __init__(self,name,age,subject):
         super().__init__(name,age)
         self.subject=subject
