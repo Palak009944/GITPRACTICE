@@ -1,15 +1,15 @@
 class Car:
-    def __init__(self,brand,model,year):
+    def __init__(self,brand,model,year):  #to initialize the object
         self.brand=brand
         self.model=model
         self.year=year
     
-    def introduce(self):
+    def introduce(self):       #function no.1
         print("Hello!")
         print("I am",self.brand)
         print("I was manufactured in",self.year)
     
-    def start_engine(self):
+    def start_engine(self):   #function no.2
         print(self.brand,self.model,"Engine started!")
 
 
