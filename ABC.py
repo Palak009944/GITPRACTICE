@@ -19,3 +19,21 @@ d.sound()
 
 c=Cat()
 c.sound()
+
+
+class Shape(ABC):
+    @abstractmethod
+    def area(self):
+        pass
+
+class Rectangle(Shape):
+    def __init__(self,length,width):
+        self.length=length
+        self.width=width
+
+    def area(self):
+        print("Area=",self.length * self.width)
+
+R=Rectangle(34,45)
+R.area()
+    
