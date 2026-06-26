@@ -1,39 +1,36 @@
-from abc import ABC, abstractmethod
+#Payment Gateway
 
-class Animal(ABC):   #By inheriting from ABC, Animal became an abstract class
-    @abstractmethod  #a decorator (a label that tells python that this method is compulsory)
-    def sound(self):
-        pass
+from abc import ABC, abstractmethod 
 
-class Dog(Animal):
-    def sound(self):
-        print("Bark")
-   
-
-class Cat(Animal):
-    def sound(self):
-        print("Meow")
-
-d=Dog()
-d.sound()
-
-c=Cat()
-c.sound()
-
-
-class Shape(ABC):
+class Payment(ABC):
     @abstractmethod
-    def area(self):
+    def pay(self):
         pass
 
-class Rectangle(Shape):
-    def __init__(self,length,width):
-        self.length=length
-        self.width=width
+    @abstractmethod
+    def refund(self):
+        pass
 
-    def area(self):
-        print("Area=",self.length * self.width)
+class UPI(Payment):
+    def pay(self):
+        print("Paid using UPI")
 
-R=Rectangle(34,45)
-R.area()
+    def refund(self):
+        print("Refund to UPI")
+
+class Credit_Card(Payment):
+    def pay(self):
+        print("Paid using Credit Card")
     
+    def refund(self):
+        print("Refund to Credit Card")
+
+U=UPI()
+C=Credit_Card()
+U.pay()
+U.refund()
+
+C.pay()
+C.refund()
+
+
