@@ -1,0 +1,17 @@
+o_list=[]
+N=int(input("Enter the number of elements you want to add: "))
+i=1
+while i<=N:
+    K = int(input(f"Enter number {i}: "))
+    o_list.append(K)
+    i=i+1
+
+u_list=[]
+for j in o_list:
+    if j not in u_list:
+        u_list.append(j)
+
+print("Original list is: ",o_list)
+print("List without duplicates is: ",u_list)
+
+
