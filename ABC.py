@@ -3,7 +3,7 @@
 from abc import ABC, abstractmethod 
 
 class Payment(ABC):
-    @abstractmethod
+    @abstractmethod    #decorator
     def pay(self):
         pass
 
