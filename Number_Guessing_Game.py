@@ -11,7 +11,7 @@ secret_number=random.randint(1,100)
 N=1
 won=False #did flagging
 while (N<=10):
-    guess=int(input("ENTER YOUR GUESS"))
+    guess=int(input("ENTER YOUR GUESS: "))
     if guess>secret_number:
         print("YOU HAVE ENTERED A NUMBER HIGHER THAN ACTUAL NUMBER")
     elif guess<secret_number:

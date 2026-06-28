@@ -11,7 +11,7 @@ print("Welcome to a simple calculator")
 num1=int(input("Enter first number: "))
 num2=int(input("Enter second number: "))
 print("Enter 1 for addition \nEnter 2 for subtraction \nEnter 3 for multiplication \nEnter 4 for division")
-N=int(input("Enter a number of your choice from 1-4"))
+N=int(input("Enter a number of your choice from 1-4: "))
 match N:
     case 1:
         print("Sum is: ",sum(num1,num2))
