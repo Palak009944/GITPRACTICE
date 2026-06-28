@@ -6,12 +6,12 @@ while i<=N:
     o_list.append(K)
     i=i+1
 
-u_list=[]
+u=[]
 for j in o_list:
-    if j not in u_list:
-        u_list.append(j)
+    if j not in u:
+        u.append(j)
 
 print("Original list is: ",o_list)
-print("List without duplicates is: ",u_list)
+print("List without duplicates is: ",u)
 
 
