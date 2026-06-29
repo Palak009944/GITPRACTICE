@@ -56,3 +56,7 @@ def greet():
 
 greet=decorator(greet)
 greet()
+#OR
+#@decorator
+#def greet()
+#    print("Hello")
