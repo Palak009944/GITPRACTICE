@@ -25,9 +25,9 @@ class cat(Animal):
 
 class cow(Animal):
     pass 
-c1=cat()
+c1=cat()  #object of cat class
 c1.eat()  #no print statement because the function called already has one
-m1=cow()
+m1=cow()  #object of cow class
 m1.sleep()
 
 #Example of Polymorphism 
